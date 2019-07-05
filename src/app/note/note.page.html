@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+    <ion-title>Adicionar Notas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="savenote(f.value)" #f="ngForm" > 
+    <ion-item>
+      <ion-label>Titulo:</ion-label>
+      <ion-textarea name="Titulo" ngModel></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Nota:</ion-label>
+        <ion-textarea name="Nota" ngModel></ion-textarea>
+      </ion-item>
+  </form>
+  <ion-button [routerLink]="['/savenote']"  expand="full">Salvar</ion-button>
+</ion-content>

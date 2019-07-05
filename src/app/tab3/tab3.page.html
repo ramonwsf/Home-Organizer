@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title >
+      Minhas Notas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let not of notes">
+      {{note.titulo}}
+    </button>
+  </ion-list>
+  <ion-button [routerLink]="['/note']" expand="full" (click)="savenote">Adicionar Notas</ion-button>
+  
+</ion-content>

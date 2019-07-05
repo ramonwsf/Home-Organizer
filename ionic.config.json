@@ -1,0 +1,7 @@
+{
+  "name": "homeOrganizer",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
